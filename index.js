@@ -27,10 +27,11 @@ const longest_diagonal_num = (w, h) => {
         let diagonal = Math.sqrt(Math.pow(h[i], 2) + Math.pow(w[i], 2));
         result.push(diagonal);
     }
-    return 'Найдовша діагональ: ' + result.sort()[0];
+    let maxIndex = result.indexOf(Math.max.apply(null, result));
+    return 'Номер найдовшої діагоналі: ' + (maxIndex + 1);//
 }
 
 
-count_width(w,h);
-count_height(w,h);
+count_width(w, h);
+count_height(w, h);
 longest_diagonal_num(w, h);

@@ -8,7 +8,7 @@ const count_width = (w, h) => {
             bigger_width_count++;
         }
     }
-    console.log('Ширина більша: ' + bigger_width_count);
+    return 'Ширина більша: ' + bigger_width_count;
 }
 
 const count_height = (w, h) => {
@@ -18,7 +18,7 @@ const count_height = (w, h) => {
             smaller_width_count++;
         }
     }
-    console.log('Довжина більша: ' + smaller_width_count);
+    return 'Довжина більша: ' + smaller_width_count;
 }
 
 const longest_diagonal_num = (w, h) => {
@@ -27,7 +27,7 @@ const longest_diagonal_num = (w, h) => {
         let diagonal = Math.sqrt(Math.pow(h[i], 2) + Math.pow(w[i], 2));
         result.push(diagonal);
     }
-    console.log('Найдовша діагональ: ' + result.sort()[0]);
+    return 'Найдовша діагональ: ' + result.sort()[0];
 }
 
 
